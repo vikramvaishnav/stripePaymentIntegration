@@ -70,12 +70,13 @@ class StripeServices {
   Future<StripeTransactionResponse> payViaExistingCard(
       {String amount, String currency, stripkar.CreditCard currentCard}) async {
     try {
-      // if (stripkar.StripePayment == null) print("Null aahe re baba");
+      // if (stripkar.StripePayment == null) print("Null");
       // var paymentMethod = await stripkar.StripePayment.createPaymentMethod(
       //     stripkar.PaymentMethodRequest(card: currentCard));
 
       var paymentIntent =
           await StripeServices.createPaymentIntent(amount, currency);
+      print("payment intent client secret ${paymentIntent['client_secret']}");
       var response = await stripkar.StripePayment.confirmPaymentIntent(
           stripkar.PaymentIntent(
         clientSecret: paymentIntent['client_secret'],

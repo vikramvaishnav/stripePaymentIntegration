@@ -1,16 +1,38 @@
-# mastering_payments
+# Flutter Stripe Integration + Firebase
 
-A new Flutter project.
+Used Firebase authentication + Firebase firestore + Stripe Payment Gateway
 
-## Getting Started
+## Things Done ✅
+1. User Authentication using Firebase Authentication
+2. Connecting User in User collection on Firestore 
+3. Create Customer on Strips Server 
+4. Updating Firestore Customer with Strips Customer ID (StripId)
+5. Adding Card as PaymentMethod to Customer with StripeId on Stripe Server
+6. Adding Card in Firestore in a separate collection as card and Store card details
+7. Listing All saved cards on App
+8. Can Pay Using New card with stripe CardFrom ( Note: not included in this project because first I have saved card) 
 
-This project is a starting point for a Flutter application.
+[For Payment with newcard function Please Look at this repo](https://github.com/vikramvaishnav/Stripe_Payment_With_NewCard.git)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Things not able to do it :
+
+1. Not Abel to pay from saved cards
+
+Reason - 
+
+1.1. Tried to use Charge API of Strip's but its deprecated and supported anymore
+
+1.2. Tried Using creating Payment Intent API but getting an error (In method  StripePayment.createPaymentMethod  or at in StripePayment object)
+
+**I also used PostMan to test API but not able to solve the error**
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
