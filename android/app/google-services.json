@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "948021377981",
+    "project_id": "fart-stripe-payment-gateway",
+    "storage_bucket": "fart-stripe-payment-gateway.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948021377981:android:b9cc6109024600526bf0d4",
+        "android_client_info": {
+          "package_name": "com.vikram.fartstripe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948021377981-ckc02ukjoae7ch65ld2lcr7scrqpe1tu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSU1EH_EgxCDA24iFtEODi-y739LqVlP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948021377981-ckc02ukjoae7ch65ld2lcr7scrqpe1tu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
